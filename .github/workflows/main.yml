@@ -24,7 +24,7 @@ jobs:
       run: mvn -B package --file pom.xml
     
     - name: Packing war file
-      run: mkdir staging && cp target/*.war staging
+      run: mkdir staging && cp ./webapp/target/webapp.war staging
       
     - name: Upload to artifact  
       uses: actions/upload-artifact@v3
