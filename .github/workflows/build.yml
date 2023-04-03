@@ -26,6 +26,8 @@ jobs:
       
   Docker:
   
+    runs-on: ubuntu-latest
+  
     steps:
     - name: Build the Docker image   
       run: docker build . --file Dockerfile --tag arunthegen/javawebapp:latest
